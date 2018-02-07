@@ -1,0 +1,32 @@
+body {
+    background-color: #632CE4;
+    color: #000000;
+    }
+h1 {
+    color: #FFFFCC;
+    text-align: center;
+    text-size: 20;
+    }
+h2 {
+    background-color: #FFFFCC;
+    color: #000000;
+    text-align: left;
+    text-size: 14;
+    }
+h3 {
+    background-color: #632CE4;
+    color: #FFFFCC;
+    text-align: center;
+    text-size: 18;
+    }
+p {
+    color: #FFFFCC;
+    text-align: center;
+    font-size: 16;
+    }
+p1 {
+    background-color: #632CE4;
+    color: #000000;
+    text-align: left;
+    text-size 12;
+}

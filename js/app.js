@@ -1,7 +1,7 @@
-//alert ('things');
+"use strict";
 var numRight = 0
 var answer1 = prompt('Do I own a car?').toLowerCase().trim();
-    console.log(answer1);
+    console.log('user answered ' + answer1);
     if (answer1 === 'no'){
         alert('Sure don\'t, I\'m an avid cyclist and haven\'t owned a car in over 5 years.');
         numRight +=1;
@@ -13,7 +13,7 @@ var answer1 = prompt('Do I own a car?').toLowerCase().trim();
     console.log('Number Correct: ' + numRight);
 
 var answer2 = prompt('Is JavaScript my first programming language?').toLowerCase().trim();
-    console.log(answer2);
+    console.log('user answered ' + answer2);
     if (answer2 === 'no'){
         alert('No, when I was a kid my dad taught me how to program in BASIC on our Commodore 64.');
         numRight +=1;
@@ -25,7 +25,7 @@ var answer2 = prompt('Is JavaScript my first programming language?').toLowerCase
     console.log('Number Correct: ' + numRight);
 
 var answer3 = prompt('Have I ever jumped out of an airplane?').toLowerCase().trim();
-    console.log(answer3);
+    console.log('user answered ' + answer3);
     if (answer3 === 'no'){
         alert('No, but I did get airborne in a tank once.');
         numRight +=1;
@@ -37,7 +37,7 @@ var answer3 = prompt('Have I ever jumped out of an airplane?').toLowerCase().tri
     console.log('Number Correct: ' + numRight);
 
 var answer4 = prompt('Have I ever swam with dolphins?').toLowerCase().trim();
-    console.log(answer4);
+    console.log('user answered ' + answer4);
     if (answer4 === 'yes'){
         alert('Yes, but not on purpose.  I capsized a kayak in the Gulf of Mexico and a pod of dolphins showed up while I was floating back to shore.');
         numRight +=1;
@@ -49,7 +49,7 @@ var answer4 = prompt('Have I ever swam with dolphins?').toLowerCase().trim();
     console.log('Number Correct: ' + numRight);
 
 var answer5 = prompt('Am I comfortable talking about myself?').toLowerCase().trim();
-    console.log(answer5);
+    console.log('user answered ' + answer5);
     if (answer5 === 'no'){
         alert(':|');
         numRight +=1;
