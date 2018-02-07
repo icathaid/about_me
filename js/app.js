@@ -59,3 +59,4 @@ var answer5 = prompt('Yes or No 5?').toLowerCase().trim();
         alert('One or the other');
     }
     console.log('Number Correct: ' + numRight);
+alert('You got ' + numRight + ' correct!');
