@@ -19,6 +19,9 @@ h3 {
     text-align: center;
     text-size: 18;
     }
+ol {
+    text-align: left;
+    }
 p {
     color: #FFFFCC;
     text-align: center;
