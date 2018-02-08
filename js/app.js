@@ -3,10 +3,10 @@ var numRight = 0
 var answer1 = prompt('Do I own a car?').toLowerCase().trim();
     console.log('user answered ' + answer1);
     if (answer1 === 'no'){
-        alert('Sure don\'t, I\'m an avid cyclist and haven\'t owned a car in over 5 years.');
+        alert('Right!');
         numRight +=1;
     } else if (answer1 ==='yes'){
-        alert('Nope, I haven\'t owned a car for some time now.');
+        alert('Nope.');
     } else {
         alert('BZZZZZT!!!!  Please answer yes or no.');
     }
@@ -15,10 +15,10 @@ var answer1 = prompt('Do I own a car?').toLowerCase().trim();
 var answer2 = prompt('Is JavaScript my first programming language?').toLowerCase().trim();
     console.log('user answered ' + answer2);
     if (answer2 === 'no'){
-        alert('No, when I was a kid my dad taught me how to program in BASIC on our Commodore 64.');
+        alert('Right!');
         numRight +=1;
     } else if (answer2 === 'yes'){
-        alert('It\'s not, but it\'s the first one in a very long time.');
+        alert('Nope.');
     } else {
         alert('BZZZZZT!!!!  Please answer yes or no.');
     }
@@ -27,10 +27,10 @@ var answer2 = prompt('Is JavaScript my first programming language?').toLowerCase
 var answer3 = prompt('Have I ever jumped out of an airplane?').toLowerCase().trim();
     console.log('user answered ' + answer3);
     if (answer3 === 'no'){
-        alert('No, but I did get airborne in a tank once.');
+        alert('Right!');
         numRight +=1;
     } else if (answer3 === 'yes'){
-        alert('No, but I\'ve always wanted to.');
+        alert('Not yet.');
     } else {
         alert('BZZZZZT!!!!  Please answer yes or no.');
     }
@@ -39,7 +39,7 @@ var answer3 = prompt('Have I ever jumped out of an airplane?').toLowerCase().tri
 var answer4 = prompt('Have I ever swam with dolphins?').toLowerCase().trim();
     console.log('user answered ' + answer4);
     if (answer4 === 'yes'){
-        alert('Yes, but not on purpose.  I capsized a kayak in the Gulf of Mexico and a pod of dolphins showed up while I was floating back to shore.');
+        alert('Right!');
         numRight +=1;
     } else if (answer4 === 'no'){
         alert('I have, and it was amazing.');
@@ -54,7 +54,7 @@ var answer5 = prompt('Am I comfortable talking about myself?').toLowerCase().tri
         alert(':|');
         numRight +=1;
     } else if (answer5 === 'yes'){
-        alert('Were you there for my introduction??');
+        alert('Nope.');
     } else {
         alert('BZZZZZT!!!!  Please answer yes or no.');
     }
@@ -115,6 +115,3 @@ while (guesses >= 1 && correctBrands === 0) {
 }
 console.log('Number Correct: ' + numRight);
 alert('Congratulations!  You got ' + numRight + ' correct out of 7 questions!');
-
-
-
