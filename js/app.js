@@ -20,7 +20,7 @@ function popQuiz(){
   }
   console.log('Numer Correct: ' + numRight);
 }
-function brandBikes(){
+function howManyBikes(){
   var correct = 0;
   var numBikes = 3;
   var numTries = 1;
@@ -76,7 +76,6 @@ function guessingGame(){
   console.log('Number Correct: ' + numRight);
   alert('Congratulations!  You got ' + numRight + ' correct out of 7 questions!');
 }
-
 popQuiz();
+howManyBikes();
 guessingGame();
-brandBikes();
