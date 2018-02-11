@@ -1,67 +1,28 @@
 'use strict';
+var numRight = 0
+function popQuiz(){
+  var questions = ['Do I own a car?', 'Is JavaScript my first programming language?', ' Have I ever jumped out of an airplane?', 'Have I ever swam with dolphins?', 'Am I comfortable talking about myself?']
+  var answersLong = ['no', 'no', 'no', 'yes', 'no']
+  var answersShort = ['n', 'n', 'n', 'y', 'n']
 
-
-var numRight = 0;
-var answer1 = prompt('Do I own a car?').toLowerCase().trim();
-console.log('user answered ' + answer1);
-if (answer1 === 'no'){
-  alert('Right!');
-  numRight +=1;
-} else if (answer1 ==='yes'){
-  alert('Nope.');
-} else {
-  alert('BZZZZZT!!!!  Please answer yes or no.');
+  for (var i = 0; i < questions.length; i++) {
+    var answer = prompt(questions[i]).toLowerCase().trim();
+    if (answer === answersShort[i] || answer === answersLong[i]) {
+      console.log('User answered: ' + answer + ' \, was correct.');
+      numRight +=1;
+      
+    } else {
+      console.log('User answered: ' + answer + ' \, was wrong.');
+    }
+  }
+  if (numRight >= 3) {
+    alert('You\'re doing great so far, you\'ve got ' + numRight + ' right!  Let\'ts move on.');
+  } else {
+    alert('You\'ve got ' + numRight + ' right so far.  Let\'s move on.');
+  }
+  console.log('Numer Correct: ' + numRight);
 }
-console.log('Number Correct: ' + numRight);
-
-var answer2 = prompt('Is JavaScript my first programming language?').toLowerCase().trim();
-console.log('user answered ' + answer2);
-if (answer2 === 'no'){
-  alert('Right!');
-  numRight +=1;
-} else if (answer2 === 'yes'){
-  alert('Nope.');
-} else {
-  alert('BZZZZZT!!!!  Please answer yes or no.');
-}
-console.log('Number Correct: ' + numRight);
-
-var answer3 = prompt('Have I ever jumped out of an airplane?').toLowerCase().trim();
-console.log('user answered ' + answer3);
-if (answer3 === 'no'){
-  alert('Right!');
-  numRight +=1;
-} else if (answer3 === 'yes'){
-  alert('Not yet.');
-} else {
-  alert('BZZZZZT!!!!  Please answer yes or no.');
-}
-console.log('Number Correct: ' + numRight);
-
-var answer4 = prompt('Have I ever swam with dolphins?').toLowerCase().trim();
-console.log('user answered ' + answer4);
-if (answer4 === 'yes'){
-  alert('Right!');
-  numRight +=1;
-} else if (answer4 === 'no'){
-  alert('I have, and it was amazing.');
-} else {
-  alert('BZZZZZT!!!!  Please answer yes or no.');
-}
-console.log('Number Correct: ' + numRight);
-
-var answer5 = prompt('Am I comfortable talking about myself?').toLowerCase().trim();
-console.log('user answered ' + answer5);
-if (answer5 === 'no'){
-  alert(':|');
-  numRight +=1;
-} else if (answer5 === 'yes'){
-  alert('Nope.');
-} else {
-  alert('BZZZZZT!!!!  Please answer yes or no.');
-}
-console.log('Number Correct: ' + numRight);
-console.log('user got ' + numRight + ' correct out of the first 5 y/n');
+popQuiz();
 
 function brandBikes(){
   var correct = 0;
@@ -71,7 +32,6 @@ function brandBikes(){
   while (numTries <5) {
     var answer = prompt('How many bikes have I owned? (as an adult)').toLowerCase().trim();
     answer = parseInt(answer);
-    console.log('User answered:' + answer);
     if (answer > numBikes) {
       alert('Your answer was too high, guess again!');
       numTries +=1;
@@ -91,6 +51,7 @@ function brandBikes(){
   if (numTries === 5 && correct < 1){
     alert('Sorry, you\'re all out of guesses!');
   }
+  console.log('Number Correct: ' + numRight);
 }
 brandBikes();
 
