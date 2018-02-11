@@ -4,13 +4,11 @@ function popQuiz(){
   var questions = ['Do I own a car?', 'Is JavaScript my first programming language?', ' Have I ever jumped out of an airplane?', 'Have I ever swam with dolphins?', 'Am I comfortable talking about myself?']
   var answersLong = ['no', 'no', 'no', 'yes', 'no']
   var answersShort = ['n', 'n', 'n', 'y', 'n']
-
   for (var i = 0; i < questions.length; i++) {
     var answer = prompt(questions[i]).toLowerCase().trim();
     if (answer === answersShort[i] || answer === answersLong[i]) {
       console.log('User answered: ' + answer + ' \, was correct.');
       numRight +=1;
-      
     } else {
       console.log('User answered: ' + answer + ' \, was wrong.');
     }
@@ -22,13 +20,10 @@ function popQuiz(){
   }
   console.log('Numer Correct: ' + numRight);
 }
-popQuiz();
-
 function brandBikes(){
   var correct = 0;
   var numBikes = 3;
   var numTries = 1;
-
   while (numTries <5) {
     var answer = prompt('How many bikes have I owned? (as an adult)').toLowerCase().trim();
     answer = parseInt(answer);
@@ -53,8 +48,6 @@ function brandBikes(){
   }
   console.log('Number Correct: ' + numRight);
 }
-brandBikes();
-
 function guessingGame(){
   var bikeBrands = ['trek', 'kona', 'cannondale'];
   var guesses = 6;
@@ -83,4 +76,7 @@ function guessingGame(){
   console.log('Number Correct: ' + numRight);
   alert('Congratulations!  You got ' + numRight + ' correct out of 7 questions!');
 }
+
+popQuiz();
 guessingGame();
+brandBikes();
